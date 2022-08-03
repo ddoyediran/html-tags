@@ -31,9 +31,11 @@
           <input type="number" placeholder="Enter your age" name="age" />
         </div>
 
-        <div>
-          <label for="role">Choose a role that best describes you</label>
-          <select name="select-role" id="role">
+        <div class="label-input-card">
+          <label for="role" class="label-select"
+            >Choose a role that best describes you</label
+          >
+          <select name="select-role" id="role" class="select-card">
             <option value="Select-role">Select role</option>
             <option value="student">Student</option>
             <option value="doctor">Doctor</option>
@@ -42,50 +44,80 @@
           </select>
         </div>
 
-        <div>
+        <div class="label-input-card">
           <label for="recommendation"
             >Would you recommend our product to a friend?</label
           >
-          <input type="radio" name="recommend" id="never" value="never" />Never
-          <input type="radio" name="recommend" id="maybe" value="maybe" />Maybe
-          <input
-            type="radio"
-            name="recommend"
-            id="likely"
-            value="likely"
-          />Likely
-          <input
-            type="radio"
-            name="recommend"
-            id="definitely"
-            value="definitely"
-          />Definitely
+          <div class="radio-card">
+            <input
+              type="radio"
+              class="radio-ele-class"
+              name="recommend"
+              id="never"
+              value="never"
+            />
+            <span class="radio-ele-class">Never</span>
+          </div>
+
+          <div class="radio-card">
+            <input
+              type="radio"
+              name="recommend"
+              id="maybe"
+              value="maybe"
+            /><span>Maybe</span>
+          </div>
+
+          <div class="radio-card">
+            <input type="radio" name="recommend" id="likely" value="likely" />
+            <span>Likely</span>
+          </div>
+
+          <div class="radio-card">
+            <input
+              type="radio"
+              name="recommend"
+              id="definitely"
+              value="definitely"
+            /><span>Definitely</span>
+          </div>
         </div>
 
-        <div>
+        <div class="label-input-card">
           <label for="review">What skills best describes you?</label>
-          <input type="checkbox" name="ui" id="ui" value="ui" />UI
-          <input
-            type="checkbox"
-            name="features"
-            id="features"
-            value="features"
-          />Features
-          <input
-            type="checkbox"
-            name="service"
-            id="service"
-            value="service"
-          />Service
-          <input
-            type="checkbox"
-            name="simpleness"
-            id="simpleness"
-            value="simpleness"
-          />Simpleness
+          <div class="checkbox-card">
+            <input type="checkbox" name="ui" id="ui" value="ui" />UI
+          </div>
+
+          <div class="checkbox-card">
+            <input
+              type="checkbox"
+              name="features"
+              id="features"
+              value="features"
+            />Features
+          </div>
+
+          <div class="checkbox-card">
+            <input
+              type="checkbox"
+              name="service"
+              id="service"
+              value="service"
+            />Service
+          </div>
+
+          <div class="checkbox-card">
+            <input
+              type="checkbox"
+              name="simpleness"
+              id="simpleness"
+              value="simpleness"
+            />Simpleness
+          </div>
         </div>
 
-        <div>
+        <div class="label-input-card remarks-card">
           <label for="remarks">Remarks</label>
           <br />
           <textarea
